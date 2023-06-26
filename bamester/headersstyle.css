@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 90vh;
+}
+.header{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 90vh;
+}
+.left{
+    grid-column: 1/4;
+    background-image: url(/bamester/image/header.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.right{
+background-color: #222121;
+grid-column: 4/7;
+display: grid;
+grid-template-columns: repeat(5 , 1fr);
+grid-template-rows: repeat(5 , 1fr);
+}
+.text{
+    position: absolute;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    top: 40%;
+    right: 45.6%;
+    background: linear-gradient(to right , #202020 47% ,#cac8c8 30%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.wellcome{
+grid-column:3/4 ;
+grid-row:3/2 ;
+font-family: 'Dancing Script', cursive;
+color:#fff;
+font-size: 30px;
+}
+.paragrapgh{
+grid-column:3/5 ;
+grid-row: 4/3;
+font-family: 'Dancing Script', cursive;
+color: #fff;
+font-size: 18px;
+text-align:right ;
+}
+.btn{
+grid-column: 3/4;
+grid-row:5/4 ;
+align-self: center;
+padding: 15px;
+color: #fff;
+background-color: blueviolet;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: all 0.4s;
+}
+.btn:hover{
+    background-color: #fff;
+    color: blueviolet;
+}
+
+.btnx{
+grid-column: 4/5;
+grid-row:4/6;
+align-self: center;
+padding: 15px;
+color: #fff;
+background-color: blueviolet;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: all 0.4s;
+}
+.btnx:hover{
+    background-color: #fff;
+    color: blueviolet;
+}
+.link{
+    grid-column: 3/4;
+    grid-row:5/4 ;
+    align-self: center; 
+}
+.linkx{
+    grid-column: 4/5;
+    grid-row:4/5 ;
+    align-self: center; 
+}

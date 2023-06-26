@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0px;
+    font-family: sans-serif;
+    background-image: url(/bamester/image/daymd);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    font-family: sans-serif;
+    font-size: 1.125rem;
+    
+
+}
+#container{
+    position: relative;
+    width: 940px;
+    float: right;
+
+}
+#container::after{
+content:"";
+display: block;
+clear: both;
+height: 0;
+
+}
+#menu{
+    position: relative;
+    float:right;
+    width: 90%;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 35px 2 rgba(22, 22, 23, 0.37);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 5px 35px
+    align-self: flex-end;
+    margin: 0.9375rem;
+    
+}
+#menu, #menu ul{
+    list-style: none;
+}
+#menu > li{
+    float: right;
+    position: relative;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    perspective: 1000px;
+}
+#menu > li:first-child{
+    box-shadow: -1px 0 0 rgba(0,0,0,0.1),1px 0 0 
+    rgba(255, 255, 255,0.25);
+}
+#menu a{
+    display: block;
+    position: relative;
+    z-index: 10;
+    padding: 13px 20px 13px 20px;
+    text-decoration: none;
+    color: black;
+    line-height: 1;
+    font-size: 16px;
+    background: transparent;
+    font-weight: 400;
+    transition: all 0.25s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+#menu > li:hover > a{
+    background: #000000;
+    color: rbga(0,223,252,1);
+    text-shadow: none;
+}
+#menu li ul{
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    width: 200px;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: transparent;
+    overflow: hidden;
+    transform-origin: 50% 0%;
+}
+#menu li:hover ul{
+    padding: 15px 0;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 2 rgba(22, 22, 23, 0.37);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 10px;
+    opacity: 1;
+    visibility:visible;
+    animation-name: swingdown;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+@keyframes swingdown{
+        0%{
+            opacity: 0.99999;
+            transform: rotateX(90deg);
+        }
+        30%{
+            transform: rotateX(-20deg) rotateY(5deg);
+            animation-timing-function: ease-in-out;
+        }
+        65%{
+            transform: rotateX(20deg) rotateY(-3deg);
+            animation-timing-function: ease-in-out;
+
+        }
+}
+/* .left{
+    float: right;
+    background-color: blueviolet;
+    padding: 30px;
+}
+.left .button{
+    background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}
+
+.footer{
+    background-color: azure;
+    display: block;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    
+}
+.switch {
+    align-self: flex-end;
+    margin: 0.9375rem;
+    margin: 0px 1px;
+    padding: 10px;
+}
+/* .inner-switch {
+/*     display: inline-block;
+    cursor: pointer;
+    border: 1px solid #555;
+    border-radius: 1.25rem;
+    width: 3.125rem;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.1875rem;
+    margin-left: 0.3125rem;
+    align-self: center; */
+padding: 10px;
+color: #fff;
+background-color: blueviolet;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: all 0.4s;
+} */
+
+
+.switch {
+    align-self: flex-end;
+    margin: 0.9375rem;
+}
+.inner-switch {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #555;
+    border-radius: 1.25rem;
+    width: 3.125rem;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.1875rem;
+    margin-left: 0.3125rem;
+}
+.dark{
+    background-color: #222;
+    color: #e6e6e6;
+    border-color: #e6e6e6;
+}
+/* .bgn{
+    padding: 15px;
+    color: #fff;
+    background-color: #222121;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s;
+} */
+/* .bgd{
+    padding: 15px;
+    color: #fff;
+    background-color: #0000CD;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s;
+} */
+/* .bgn:hover{
+    background-color: #fff;
+    color: blueviolet;
+} */
+/* .bgd:hover{
+    background-color: #fff;
+    color: blueviolet;
+} */

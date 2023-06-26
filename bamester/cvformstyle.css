@@ -1,0 +1,81 @@
+body{
+    padding: 0;
+    margin: 0;
+    background:#222121;
+
+}
+
+.signup-form{
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    background: url(/bamester/image/header.jpg);
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+}
+.signup-form h1{
+    font-family: 'Dancing Script', cursive;
+    margin-top: 40px;
+    color: #222121;
+    font-size: 40px;
+}
+.signup-form input{
+    display: block;
+    width: 100%;
+    padding: 0 16px;
+    height: 44px;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+.txtb{
+    margin: 20px 0;
+    background: rgba(34, 32, 32, 0.719);
+    border-radius: 6px;
+}
+.signup-btn{
+    margin-bottom: 20px;
+    margin-top: 60px;
+    background: blueviolet;
+    color: #fcfafa;
+    border-radius: 44px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+.signup-btn:hover{
+    transform: scale(0.96);
+}
+.signup-form a{
+    text-decoration: none;
+    color: #222121;
+    font-family: "montserrat",sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    transition: 0.8s;
+}
+.signup-form a:hover{
+    background: rgba(0, 0, 0, 0.3);
+}
+.login{
+    color: #222121;
+}
+.gender{
+;
+}
+.textbox{
+    margin: 10px 0;
+    background: rgba(34, 32, 32, 0.719);
+    border-radius: 6px;
+
+}
+.textboxx{
+    margin: 10px 0;
+    background: rgba(34, 32, 32, 0.719);
+    border-radius: 6px;
+}

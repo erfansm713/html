@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 30px;
+    font-family: sans-serif;
+    background: url(./../backgrond.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+
+}
+.table{
+    display: block;
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    padding: 10px;
+}
+.table tr:nth-child(even) {
+background-color: #6aba68;
+padding: 10px;
+}
+.table tr:nth-child(odd) {
+   background-color:#b0e9e7;
+   padding: 10px;
+}
