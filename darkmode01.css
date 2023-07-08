@@ -1,0 +1,75 @@
+/* body.dark-mode{
+background-color: #1111;
+color: #eeee;
+} */
+
+body
+{
+  direction:rtl;
+  padding:1px;
+}
+body.dark-mode {
+	 background-color: #111;
+	 color: #eee;
+}
+ body.dark-mode a {
+	 color: #111;
+     padding: 4px;
+     align-self: center; 
+}
+/*  body.dark-mode button {
+    align-self: center;
+    padding: 15px;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s; */
+}
+ body.light-mode {
+	 background-color: #eee;
+	 color: #111;
+}
+ body.light-mode a {
+	 color: #111;
+     padding: 4px;
+     align-self: center; 
+}
+/*  body.light-mode button {
+    align-self: center;
+    padding: 15px;   
+    background-color: blueviolet;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+body.dark-mode .button :hover{
+    background-color: #fff;
+    color: blueviolet;
+}
+body.dark-mode .button {
+    align-self: center;
+    padding: 15px;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s;
+} */
+.btn{
+    align-self: center;
+    padding: 1px;   
+    background-color: blueviolet;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.btn :hover{
+    background-color: #fff;
+    color: blueviolet;  
+}
+.button is-danger{
+    align-self: center; 
+}

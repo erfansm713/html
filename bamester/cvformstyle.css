@@ -9,7 +9,7 @@ body{
     width: 300px;
     padding: 20px;
     text-align: center;
-    background: url(/bamester/image/header.jpg);
+    background: url(image/header.jpg);
     position: absolute;
     top: 80%;
     left: 50%;

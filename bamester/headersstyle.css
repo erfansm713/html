@@ -13,12 +13,12 @@
 }
 .left{
     grid-column: 1/4;
-    background-image: url(/bamester/image/header.jpg);
+    /* background-image: url(/bamester/image/header.jpg); */
     background-position: center;
     background-size: cover;
 }
 .right{
-background-color: #222121;
+color: #222121;
 grid-column: 4/7;
 display: grid;
 grid-template-columns: repeat(5 , 1fr);
@@ -33,6 +33,12 @@ grid-template-rows: repeat(5 , 1fr);
     background: linear-gradient(to right , #202020 47% ,#cac8c8 30%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+body.dark-mode text{
+    background: linear-gradient(to right , #202020 47% ,#cac8c8 30%);
+}
+body.light-mode text{
+    background: linear-gradient(to right , #cac8c8 47% ,#202020 30%); 
 }
 .wellcome{
 grid-column:3/4 ;
@@ -92,3 +98,36 @@ transition: all 0.4s;
     grid-row:4/5 ;
     align-self: center; 
 }
+small {
+    font-style: italic;
+}
+article {
+    display: flex;
+    flex-direction: column;
+}
+img {
+    max-width: 100%;
+    display: block;
+    align-self: center;
+}
+.switch {
+    align-self: flex-end;
+    margin: 0.9375rem;
+}
+.inner-switch {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #555;
+    border-radius: 1.25rem;
+    width: 3.125rem;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.1875rem;
+    margin-left: 0.3125rem;
+}
+.dark-mode{
+    background-color: #222 !important;
+    color: #e6e6e6 !important;
+    border-color: #e6e6e6;
+}
+
